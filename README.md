@@ -59,18 +59,11 @@ To install the Go Ethereum Tools, please follow the next steps:
 ## Setting up your blockchain
 
 1. Using your terminal navigate to your "Blockchain-Tools" folder and initiate geth using ./geth 
-It should look something like this. 
-
-![image](https://user-images.githubusercontent.com/73208140/117095834-743da100-ad35-11eb-9005-26c63d24290f.png)
 
 2. Because the accounts must be approved, we will generate two new nodes with new account addresses that will serve as our pre-approved sealer addresses.
 Create accounts for two nodes for the network with a separate datadir for each using geth.
 ./geth --datadir node1 account new
 ./geth --datadir node2 account new
 * Note: You will need to create a password however, when you enter it you will not be able to see what you are typing, don't worry this is totally normal! Please be sure to write your password down. 
-It should look like this. 
-
-<img width="895" alt="Screen Shot 2021-05-04 at 11 59 19 PM" src="https://user-images.githubusercontent.com/73208140/117095592-c03c1600-ad34-11eb-8a81-a28a019a5f0e.png">
-
-3,
+3.
 
