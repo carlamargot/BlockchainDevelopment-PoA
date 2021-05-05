@@ -102,4 +102,41 @@ Create accounts for two nodes for the network with a separate datadir for each u
      
      <img width="164" alt="Screen Shot 2021-05-05 at 3 45 12 PM" src="https://user-images.githubusercontent.com/73208140/117199994-e3a8a480-adb8-11eb-8caa-f62fa9379dca.png">
 
-  7. In the same terminal, open another tab (press: Command t, for short) and enter 
+  7. In the same terminal, open another tab (press: Command t, for short) and enter ./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
+
+* The same thing applies for "SEALER_TWO_ADDRESS" , enter your node2 address here.
+* Note: In both cases you will be prompyed for you address, type your password and hit enter - even if you can't see it visually!
+
+Yay! Your private PoA blockchain should now be running!
+
+#Testing your Blockchain 
+
+While your blockchains are mining, open up you MyCrypto Wallet. 
+1. Change Network at the bottom left 
+![image](https://user-images.githubusercontent.com/73208140/117204290-1ef9a200-adbe-11eb-8606-d24ccaca750d.png)
+2. Click "Add Custom Node", then add the custom network information that you set in the genesis.
+- Make sure that you scroll down to choose Custom in the "Network" column to reveal more options like Chain ID.
+- Type ETH in the Currency box.
+- In the Chain ID box, type the chain id you generated during genesis creation.
+- In the URL box type: http://127.0.0.1:8545.  This points to the default RPC port on your local machine.
+- Finally, click Save & Use Custom Node.
+
+![image](https://user-images.githubusercontent.com/73208140/117204389-3e90ca80-adbe-11eb-97ae-0748d23a85ab.png)
+
+3. After connecting to the custom network in MyCrypto, it can be tested by sending money between accounts.
+- Select the View & Send option from the left menu pane, then click Keystore file.
+
+![image](https://user-images.githubusercontent.com/73208140/117204588-7a2b9480-adbe-11eb-8d36-9bfdaeb3fd59.png)
+
+4. On the next screen, click Select Wallet File, then navigate to the keystore directory inside your Node1 directory, select the file located there, provide your password when prompted and then click Unlock.
+- This will open your account wallet inside MyCrypto.
+- Looks like we're filthy rich! This is the balance that was pre-funded for this account in the genesis configuration; however, these millions of ETH tokens are just for testing purposes.
+5. In the To Address box, type the account address from Node2, then fill in an arbitrary amount of ETH. 
+- Confirm the transaction by clicking "Send Transaction", and the "Send" button in the pop-up window.
+- Click the Check TX Status when the green message pops up, confirm the logout.
+![image](https://user-images.githubusercontent.com/73208140/117204868-e3130c80-adbe-11eb-8907-a13691d4c2e1.png)
+6. You should see the transaction go from Pending to Successful in around the same blocktime you set in the genesis.
+
+
+You did it!! You set up your first PoA Blockchain! Good job!!! 
+
