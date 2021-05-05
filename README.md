@@ -138,5 +138,5 @@ While your blockchains are mining, open up you MyCrypto Wallet.
 6. You should see the transaction go from Pending to Successful in around the same blocktime you set in the genesis.
 
 
-You did it!! You set up your first PoA Blockchain! Good job!!! 
+## You did it!! You set up your first PoA Blockchain and sent a transaction! Great job!!! 
 
