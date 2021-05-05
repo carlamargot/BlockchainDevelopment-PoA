@@ -17,12 +17,14 @@ Before we begin with the fun stuff you'll need to download a few programs.
 1. Open your browser and navigate to the downloads page at https://download.mycrypto.com/.
 2. Depending on your operating system, you will be redirected to the corresponding application installer. If you are not correctly redirected, choose the appropriate installer for your operating system.
 3. Once you download the installer, open the file, and follow the installation wizard. 
+
 ![image](https://user-images.githubusercontent.com/73208140/117089062-67638200-ad22-11eb-9914-fd9219572b06.png)
 * Note: The first time you execute MyCrypto, you will see the following warning message, you can safely click on the "Open" button to start the application.
 
 Running in OS X:
 
 The first time you execute MyCrypto, you will see the following warning message, you can safely click on the "Open" button to start the application.
+
 ![image](https://user-images.githubusercontent.com/73208140/117094493-edd39000-ad31-11eb-9d04-9bcd7ba84384.png)
 
 Allowing Permission to Open Apps from Unidentified Developers
@@ -30,6 +32,7 @@ When an app is not registered with Apple, it can be automatically blocked by the
 
 1. Open the MyCrypto app, it should produce a warning error saying that you cannot open the application due to security reasons. Therefore, we'll need to make a security exception for it.
 2. Look to the top-left of the screen and click on the Apple Logo and navigate to System Preferences > Security & Privacy.
+
 ![image](https://user-images.githubusercontent.com/73208140/117094576-22474c00-ad32-11eb-8ba2-35b028cd2471.png)
 3. Click in the General tab and allow your MyCrypto application security access to be opened in the "Allow Apps Downloaded From" section. Your screen should look similar to the image below.
 
@@ -48,13 +51,14 @@ To install the Go Ethereum Tools, please follow the next steps:
 
 5. Decompress the archive in the location of your preference in your computer's hard drive, and rename the containing folder as Blockchain-Tools. We recommend using a location that can be easily accessed from the terminal window like the user's home directory.
 
-## Now for the fun stuff! 
+# Now for the fun stuff! 
 
-# Setting up your blockchain
+## Setting up your blockchain
 
 1. Using your terminal navigate to your "Blockchain-Tools" folder and initiate geth using ./geth 
 It should look something like this. 
-<img width="1440" alt="Screen Shot 2021-05-04 at 11 51 28 PM" src="https://user-images.githubusercontent.com/73208140/117095180-a817c700-ad33-11eb-9ee2-d25ee4d914a0.png">
+![image](https://user-images.githubusercontent.com/73208140/117095834-743da100-ad35-11eb-9005-26c63d24290f.png)
+
 2. Because the accounts must be approved, we will generate two new nodes with new account addresses that will serve as our pre-approved sealer addresses.
 Create accounts for two nodes for the network with a separate datadir for each using geth.
 ./geth --datadir node1 account new
@@ -64,4 +68,5 @@ It should look like this.
 
 <img width="895" alt="Screen Shot 2021-05-04 at 11 59 19 PM" src="https://user-images.githubusercontent.com/73208140/117095592-c03c1600-ad34-11eb-8a81-a28a019a5f0e.png">
 
+3,
 
