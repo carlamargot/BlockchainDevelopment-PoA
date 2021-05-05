@@ -100,12 +100,14 @@ Create accounts for two nodes for the network with a separate datadir for each u
      * This must be the private key for you node1. 
      * When this block has started to mine, be sure to say the enode with the rest of the information for your node1. You will find the encode number where it reads " Started P2P networking ". Please copy everything including the word enode! 
      
-     <img width="164" alt="Screen Shot 2021-05-05 at 3 45 12 PM" src="https://user-images.githubusercontent.com/73208140/117199994-e3a8a480-adb8-11eb-8caa-f62fa9379dca.png">
+          <img width="164" alt="Screen Shot 2021-05-05 at 3 45 12 PM" src="https://user-images.githubusercontent.com/73208140/117199994-e3a8a480-adb8-11eb-8caa-f62fa9379dca.png">
 
   7. In the same terminal, open another tab (press: Command t, for short) and enter ./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
 
 * The same thing applies for "SEALER_TWO_ADDRESS" , enter your node2 address here.
 * Note: In both cases you will be prompyed for you address, type your password and hit enter - even if you can't see it visually!
+
+<img width="1151" alt="Screen Shot 2021-05-05 at 4 45 00 PM" src="https://user-images.githubusercontent.com/73208140/117206866-5d449080-adc1-11eb-9374-c896e389d0f2.png">
 
 Yay! Your private PoA blockchain should now be running!
 
