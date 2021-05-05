@@ -19,6 +19,7 @@ Before we begin with the fun stuff you'll need to download a few programs.
 3. Once you download the installer, open the file, and follow the installation wizard. 
 
 ![image](https://user-images.githubusercontent.com/73208140/117089062-67638200-ad22-11eb-9914-fd9219572b06.png)
+
 * Note: The first time you execute MyCrypto, you will see the following warning message, you can safely click on the "Open" button to start the application.
 
 Running in OS X:
@@ -34,6 +35,7 @@ When an app is not registered with Apple, it can be automatically blocked by the
 2. Look to the top-left of the screen and click on the Apple Logo and navigate to System Preferences > Security & Privacy.
 
 ![image](https://user-images.githubusercontent.com/73208140/117094576-22474c00-ad32-11eb-8ba2-35b028cd2471.png)
+
 3. Click in the General tab and allow your MyCrypto application security access to be opened in the "Allow Apps Downloaded From" section. Your screen should look similar to the image below.
 
 # Go Ethereum Tools
@@ -47,6 +49,7 @@ To install the Go Ethereum Tools, please follow the next steps:
 3. Installing on OS X. Click on the "Geth & Tools 1.9.7" to download the applications bundle archive.
 
 ![image](https://user-images.githubusercontent.com/73208140/117090196-ad6e1500-ad25-11eb-9c43-b2f69e363c76.png)
+
 4. After downloading the tools archive, open your "Downloads" folder, and you will find a file named geth-alltools-darwin-amd64-1.9.7-a718daa6.tar.gz in OS X, and a file called geth-alltools-windows-amd64-1.9.7-a718daa6.zip in Windows. Note that the last numbers in the filename could vary depending on the last built available.
 
 5. Decompress the archive in the location of your preference in your computer's hard drive, and rename the containing folder as Blockchain-Tools. We recommend using a location that can be easily accessed from the terminal window like the user's home directory.
@@ -57,6 +60,7 @@ To install the Go Ethereum Tools, please follow the next steps:
 
 1. Using your terminal navigate to your "Blockchain-Tools" folder and initiate geth using ./geth 
 It should look something like this. 
+
 ![image](https://user-images.githubusercontent.com/73208140/117095834-743da100-ad35-11eb-9005-26c63d24290f.png)
 
 2. Because the accounts must be approved, we will generate two new nodes with new account addresses that will serve as our pre-approved sealer addresses.
