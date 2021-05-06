@@ -135,10 +135,15 @@ While your blockchains are mining, open up you MyCrypto Wallet.
 - Looks like we're filthy rich! This is the balance that was pre-funded for this account in the genesis configuration; however, these millions of ETH tokens are just for testing purposes.
 5. In the To Address box, type the account address from Node2, then fill in an arbitrary amount of ETH. 
 - Confirm the transaction by clicking "Send Transaction", and the "Send" button in the pop-up window.
-- Click the Check TX Status when the green message pops up, confirm the logout.
+
 ![image](https://user-images.githubusercontent.com/73208140/117204868-e3130c80-adbe-11eb-8907-a13691d4c2e1.png)
+
+- Click the Check TX Status when the green message pops up, confirm the logout.
+![image](https://user-images.githubusercontent.com/73208140/117228284-c4287080-ade6-11eb-85e7-75f3123389f2.png)
+
 6. You should see the transaction go from Pending to Successful in around the same blocktime you set in the genesis.
 
+![image](https://user-images.githubusercontent.com/73208140/117228330-d60a1380-ade6-11eb-8341-c1307b02363f.png)
 
 ## You did it!! You set up your first PoA Blockchain and sent a transaction! Great job!!! 
 
